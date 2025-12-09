@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class progamaIdade {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+
+		int id, i = 1;
+		int Opcao;
+		
+		do {
+			
+			System.out.println("Digite a idade:");
+			id = ler.nextInt();
+			
+			if(id<=15) {
+				System.out.println("Faixa 1");
+			}
+			
+			else if(id<=30) {
+				System.out.println("Faixa 2");
+			}
+			
+			else if(id<=45) {
+				System.out.println("Faixa 3");
+			}
+			
+			else if(id<=60) {
+				System.out.println("Faixa 4");
+			}
+			
+			else {
+				System.out.println("Faixa 5");
+			}
+			
+			i++;
+			
+			System.out.println("Deseja continuar? (1 - Sim / 2 - Nao): ");
+			Opcao = ler.nextInt();
+			
+		}while(Opcao == 1);
+		
+		
+		
+		
+		
+		
+
+	}
+
+}
